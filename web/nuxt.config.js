@@ -20,11 +20,13 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/css/tailwind.css',
+     '@fortawesome/fontawesome-svg-core/styles.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~plugins/vClickOutside.js'
+    '~plugins/vClickOutside.js',
+    '~plugins/fontawesome.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -34,13 +36,23 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/fontawesome',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+
+  // // Fontawesome
+  // fontawesome: {
+  //   icons: {
+  //     solid: true,
+  //     brand: true,
+  //   }
+  // },
 }

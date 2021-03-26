@@ -1,7 +1,9 @@
-# LAYOUTS
+# Layouts
 
-**This directory is not required, you can delete it if you don't want to use it.**
+## Default
 
-This directory contains your Application Layouts.
+This is the default recify layout, used for both mobile and non/mobile.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/views#layouts).
+## Personal
+
+This is only used as a redirect for my personal site.
