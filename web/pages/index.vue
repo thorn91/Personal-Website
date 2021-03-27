@@ -143,7 +143,6 @@
             <a
               href="#name"
               class="text-gray-500 hover:text-gray-900 px-3 py-2 font-medium text-sm rounded-md hover:bg-gray-300"
-              :class="{ activeTabClass: activeWork }"
               @click="showHistory"
             >
               Work History
@@ -152,8 +151,7 @@
             <a
               href="#name"
               class="text-gray-500 hover:text-gray-900 px-3 py-2 font-medium text-sm rounded-md hover:bg-gray-300"
-              :class="{ [activeTabClass]: activeEducation }"
-              @click="showEducation"
+              @click="activeEducation = !activeEducation"
             >
               Education
             </a>
@@ -165,6 +163,7 @@
       <div
         id="education-section"
         class="flow-root pl-6 pr-10 mt-8 sm:max-w-xl md:max-w-xl xl:max-w-3xl sm:m-auto sm:mt-12 sm:p-0"
+        v-if="activeEducation"
       >
         <div class="pb-3 border-b border-gray-200 mb-6">
           <h3 class="text-lg leading-6 font-medium text-gray-900">Education</h3>
@@ -271,6 +270,10 @@
           </li>
         </ul>
       </div>
+      <button @click="test=!test; ">Hello</button>
+      <div :class="{ 'hidden' : !test }" v-show="test">
+      <p v-show="test">HELLO!!!!!!!!!!!</p>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -323,8 +326,9 @@ export default {
   data() {
     return {
       activeTabClass: "bg-indigo-100 text-indigo-700",
-      activeEducation: false,
+      activeEducation: true,
       activeWork: false,
+      test: true,
     };
   },
 
@@ -332,6 +336,7 @@ export default {
     showEducation: function () {
       this.activeEducation = !this.activeEducation;
       this.activeWork = false;
+      console.log(this.activeEducation);
     },
   },
 };

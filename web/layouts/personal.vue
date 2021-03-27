@@ -1,7 +1,7 @@
 <template>
-  <main class="h-screen bg-personal-white">
+  <div class="h-screen bg-personal-white">
     <Nuxt />
-  </main>
+  </div>
 </template>
 
 <style>
