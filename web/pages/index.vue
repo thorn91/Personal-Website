@@ -79,6 +79,7 @@
       <div class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
         <div class="text-center">
           <h1
+            id="name"
             class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
           >
             <span class="block xl:inline text-personal-main-accent"
@@ -140,7 +141,7 @@
           <nav class="flex space-x-4" aria-label="Tabs">
             <!-- Current: "bg-indigo-100 text-indigo-700", Default: "text-gray-500 hover:text-gray-700" -->
             <a
-              href="#"
+              href="#name"
               class="text-gray-500 hover:text-gray-900 px-3 py-2 font-medium text-sm rounded-md hover:bg-gray-300"
               :class="{ activeTabClass: activeWork }"
               @click="showHistory"
@@ -149,7 +150,7 @@
             </a>
 
             <a
-              href="#"
+              href="#name"
               class="text-gray-500 hover:text-gray-900 px-3 py-2 font-medium text-sm rounded-md hover:bg-gray-300"
               :class="{ [activeTabClass]: activeEducation }"
               @click="showEducation"
@@ -161,49 +162,147 @@
       </div>
 
       <!-- Education section -->
-        <div class="flow-root w-full mt-8 sm:max-w-2xl sm:m-auto">
-          <ul class="-mb-8 ">
-            <li class="">
-              <div class="relative pb-8">
-                <span
-                  class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
-                  aria-hidden="true"
-                ></span>
-                <div class="relative flex items-start space-x-3">
-                  <div class="relative">
-                    <img
-                      class="w-10 md:w-20 rounded-full bg-gray-400 flex items-center justify-center ring-8 ring-white"
-                      src="../assets/images/uga_logo.png"
-                      alt=""
-                    />
+      <div
+        id="education-section"
+        class="flow-root pl-6 pr-10 mt-8 sm:max-w-xl md:max-w-xl xl:max-w-3xl sm:m-auto sm:mt-12 sm:p-0"
+      >
+        <div class="pb-3 border-b border-gray-200 mb-6">
+          <h3 class="text-lg leading-6 font-medium text-gray-900">Education</h3>
+        </div>
+        <ul class="-mb-8">
+          <!-- UGA -->
+          <li class="">
+            <div class="relative pb-8">
+              <span
+                class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                aria-hidden="true"
+              ></span>
+              <div class="relative flex items-start space-x-3">
+                <div class="relative">
+                  <img
+                    class="w-10 md:w-20 rounded-full flex items-center justify-center ring-4 shadow-lg ring-personal-white"
+                    src="../assets/images/uga_logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="min-w-0 flex-1">
+                  <div>
+                    <div class="text-md">
+                      <a href="#" class="font-semibold text-gray-900"
+                        >B.S. Computer Science</a
+                      >
+                    </div>
+                    <p class="mt-0.5 text-sm text-gray-500">
+                      <span class="font-semibold">University of Georgia</span
+                      ><br />2021 (Expected)
+                    </p>
                   </div>
-                  <div class="min-w-0 flex-1">
-                    <div>
-                      <div class="text-sm">
-                        <a href="#" class="font-medium text-gray-900"
-                          >Eduardo Benz</a
-                        >
-                      </div>
-                      <p class="mt-0.5 text-sm text-gray-500">
-                        Commented 6d ago
-                      </p>
-                    </div>
-                    <div class="mt-2 text-sm text-gray-700">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Tincidunt nunc ipsum tempor purus vitae id. Morbi in
-                        vestibulum nec varius. Et diam cursus quis sed purus
-                        nam.
-                      </p>
-                    </div>
+                  <div class="mt-2 text-sm text-gray-700">
+                    <p>
+                      <span class="font-semibold">GPA:</span> 3.74
+                      <br />
+                      <span class="font-semibold">Major GPA:</span> 3.92
+                    </p>
+                  </div>
+                  <div class="mt-2 text-sm text-gray-700">
+                    <p>
+                      <span class="font-semibold">Selected Electives: </span>
+                      Database Management, Web Development, Computer Networks,
+                      Scientific Computing, Human-Computer Interaction
+                    </p>
+                  </div>
+                  <div class="mt-2 text-sm text-gray-700">
+                    <p>
+                      <span class="font-semibold">Organizations: </span>
+                      Association for Computing Machinery, Data for Good
+                    </p>
                   </div>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </li>
+          <!-- Rhodes College -->
+          <li class="">
+            <div class="relative pb-8">
+              <span
+                class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-personal-white"
+                aria-hidden="true"
+              ></span>
+              <div class="relative flex items-start space-x-3">
+                <div class="relative">
+                  <img
+                    class="w-10 md:w-20 rounded-full flex items-center justify-center ring-4 shadow-lg ring-personal-white"
+                    src="../assets/images/rhodes_logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="min-w-0 flex-1">
+                  <div>
+                    <div class="text-md">
+                      <a href="#" class="font-semibold text-gray-900"
+                        >B.S. Neuroscience</a
+                      >
+                    </div>
+                    <p class="mt-0.5 text-sm text-gray-500">
+                      <span class="font-semibold">Rhodes College</span
+                      ><br />2014
+                    </p>
+                  </div>
+                  <div class="mt-2 text-sm text-gray-700">
+                    <p>
+                      <span class="font-semibold">GPA:</span> 3.59
+                      <br />
+                      <span class="font-semibold">Major GPA:</span> 3.81
+                    </p>
+                  </div>
+                  <div class="mt-2 text-sm text-gray-700">
+                    <p>
+                      <span class="font-semibold"
+                        >Academic Honors Societies:
+                      </span>
+                      &Beta;&Beta;&Beta; (Biology),
+                      &Gamma;&Sigma;&Epsilon;(Chemistry), &Nu;&Rho;&Psi;
+                      (Neuroscience)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-
     </div>
+
+    <!-- Footer -->
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <footer class="bg-personal-white mt-12">
+      <div
+        class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
+      >
+        <div class="flex justify-center space-x-6 md:order-2">
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">GitHub</span>
+            <svg
+              class="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="mt-8 md:mt-0 md:order-1">
+          <p class="text-center text-base text-gray-400">
+            &copy; 2020 Workflow, Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -214,6 +313,11 @@ export default {
     return {
       title: "Thomas Horn",
     };
+  },
+
+  mounted() {
+    // We want to load the main page from the top
+    window.scrollTo(0, 0);
   },
 
   data() {
