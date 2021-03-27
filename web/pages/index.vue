@@ -73,6 +73,7 @@
       </div>
     </div>
 
+    <!-- Main intro section` -->
     <div class="relative pt-6 pb-16 sm:pb-24 sm:pt-16">
       <div class="text-center"></div>
       <div class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
@@ -87,7 +88,7 @@
           <p
             class="mt-3 max-w-md mx-auto text-base text-gray-700 sm:text-lg md:mt-6 md:text-xl md:max-w-3xl"
           >
-            Computer Science Student | Bioinformatics Assistant
+            Software Engineer | Bioinformatics Assistant
           </p>
 
           <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-10">
@@ -97,13 +98,21 @@
                 class="text-personal-dark text-xl sm:text-5xl hover:text-personal-main-accent"
               />
             </a>
-            <a href="https://www.linkedin.com/in/thomaswarrenhorn" target="_blank" class="pl-12">
+            <a
+              href="https://www.linkedin.com/in/thomaswarrenhorn"
+              target="_blank"
+              class="pl-12"
+            >
               <font-awesome-icon
                 :icon="['fab', 'linkedin']"
                 class="text-personal-dark text-xl sm:text-5xl hover:text-personal-main-accent"
               />
             </a>
-            <a href="mailto:thomas@thomashorn.info" target="_blank" class="pl-12">
+            <a
+              href="mailto:thomas@thomashorn.info"
+              target="_blank"
+              class="pl-12"
+            >
               <font-awesome-icon
                 :icon="['fas', 'envelope']"
                 class="text-personal-dark text-xl sm:text-5xl hover:text-personal-main-accent"
@@ -112,6 +121,88 @@
           </div>
         </div>
       </div>
+
+      <!-- Choose content -->
+      <div class="flex justify-center">
+        <div class="hidden">
+          <label for="tabs" class="sr-only">Select a tab</label>
+          <select
+            id="tabs"
+            name="tabs"
+            class="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+          >
+            <option>Work History</option>
+
+            <option>Education</option>
+          </select>
+        </div>
+        <div class="block mt-6 sm:mt-16">
+          <nav class="flex space-x-4" aria-label="Tabs">
+            <!-- Current: "bg-indigo-100 text-indigo-700", Default: "text-gray-500 hover:text-gray-700" -->
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 px-3 py-2 font-medium text-sm rounded-md hover:bg-gray-300"
+              :class="{ activeTabClass: activeWork }"
+              @click="showHistory"
+            >
+              Work History
+            </a>
+
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 px-3 py-2 font-medium text-sm rounded-md hover:bg-gray-300"
+              :class="{ [activeTabClass]: activeEducation }"
+              @click="showEducation"
+            >
+              Education
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Education section -->
+        <div class="flow-root w-full mt-8 sm:max-w-2xl sm:m-auto">
+          <ul class="-mb-8 ">
+            <li class="">
+              <div class="relative pb-8">
+                <span
+                  class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                  aria-hidden="true"
+                ></span>
+                <div class="relative flex items-start space-x-3">
+                  <div class="relative">
+                    <img
+                      class="w-10 md:w-20 rounded-full bg-gray-400 flex items-center justify-center ring-8 ring-white"
+                      src="../assets/images/uga_logo.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <div>
+                      <div class="text-sm">
+                        <a href="#" class="font-medium text-gray-900"
+                          >Eduardo Benz</a
+                        >
+                      </div>
+                      <p class="mt-0.5 text-sm text-gray-500">
+                        Commented 6d ago
+                      </p>
+                    </div>
+                    <div class="mt-2 text-sm text-gray-700">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Tincidunt nunc ipsum tempor purus vitae id. Morbi in
+                        vestibulum nec varius. Et diam cursus quis sed purus
+                        nam.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+      </div>
+
     </div>
   </div>
 </template>
@@ -123,6 +214,21 @@ export default {
     return {
       title: "Thomas Horn",
     };
+  },
+
+  data() {
+    return {
+      activeTabClass: "bg-indigo-100 text-indigo-700",
+      activeEducation: false,
+      activeWork: false,
+    };
+  },
+
+  methods: {
+    showEducation: function () {
+      this.activeEducation = !this.activeEducation;
+      this.activeWork = false;
+    },
   },
 };
 </script>
