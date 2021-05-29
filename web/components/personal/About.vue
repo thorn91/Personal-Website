@@ -14,7 +14,7 @@
         <p
           class="mt-3 max-w-md mx-auto text-base text-gray-700 sm:text-lg md:mt-6 md:text-xl md:max-w-3xl"
         >
-          Software Engineer | Bioinformatics Assistant
+          Associate Consultant | Software Engineer
         </p>
 
         <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-10">
