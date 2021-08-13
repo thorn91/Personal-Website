@@ -31,12 +31,12 @@
               <div>
                 <div class="text-md">
                   <a href="#" class="font-semibold text-gray-900"
-                    >B.S. Computer Science</a
+                    >B.S. Computer Science, Magna Cum Laude</a
                   >
                 </div>
                 <p class="mt-0.5 text-sm text-gray-500">
                   <span class="font-semibold">University of Georgia</span
-                  ><br />2021 (Expected)
+                  ><br />2021
                 </p>
               </div>
               <div class="mt-2 text-sm text-gray-700">
@@ -82,7 +82,7 @@
               <div>
                 <div class="text-md">
                   <a href="#" class="font-semibold text-gray-900"
-                    >B.S. Neuroscience</a
+                    >B.S. Neuroscience, Cum Laude</a
                   >
                 </div>
                 <p class="mt-0.5 text-sm text-gray-500">
