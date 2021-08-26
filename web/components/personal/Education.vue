@@ -41,7 +41,7 @@
               </div>
               <div class="mt-2 text-sm text-gray-700">
                 <p>
-                  <span class="font-semibold">GPA:</span> 3.74
+                  <span class="font-semibold">GPA:</span> 3.76
                   <br />
                   <span class="font-semibold">Major GPA:</span> 3.92
                 </p>
