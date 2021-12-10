@@ -1,7 +1,16 @@
 <template>
   <div
     id="education-section"
-    class="flow-root pl-6 pr-10 mt-8 sm:max-w-xl md:max-w-xl xl:max-w-3xl sm:m-auto sm:mt-12 sm:p-0"
+    class="
+      flow-root
+      pl-6
+      pr-10
+      mt-8
+      sm:max-w-xl
+      md:max-w-xl
+      xl:max-w-3xl
+      sm:m-auto sm:mt-12 sm:p-0
+    "
   >
     <div class="pb-3 border-b border-gray-200 mb-6">
       <h3 class="text-lg leading-6 font-medium text-personal-main-accent">
@@ -22,8 +31,65 @@
           <div class="relative flex items-start space-x-3">
             <div class="relative">
               <img
+                id="buyersEdge"
+                class="
+                  w-10
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                  ring-4
+                  shadow-lg
+                  ring-personal-white
+                "
+                src="~/assets/images/buyers_edge.png"
+                alt=""
+              />
+            </div>
+            <div class="min-w-0 flex-1">
+              <div>
+                <div class="text-md">
+                  <a href="#" class="font-semibold text-gray-900"
+                    >Software Developer</a
+                  >
+                </div>
+                <p class="mt-0.5 text-sm text-gray-500">
+                  <span class="font-semibold">Buyers Edge Platform</span><br />Winter 2021
+                  - Present
+                </p>
+              </div>
+              <div class="mt-2 text-sm text-gray-700">
+                <p></p>
+              </div>
+              <div class="mt-2 text-sm text-gray-700">
+                <p>TBD</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- Techport13 -->
+      <li class="">
+        <div class="relative pb-8">
+          <span
+            class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
+            aria-hidden="true"
+          ></span>
+          <div class="relative flex items-start space-x-3">
+            <div class="relative">
+              <img
                 id="techport13"
-                class="w-10 rounded-full flex items-center justify-center ring-4 shadow-lg ring-personal-white"
+                class="
+                  w-10
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                  ring-4
+                  shadow-lg
+                  ring-personal-white
+                "
                 src="~/assets/images/techport13_logo.png"
                 alt=""
               />
@@ -36,20 +102,23 @@
                   >
                 </div>
                 <p class="mt-0.5 text-sm text-gray-500">
-                  <span class="font-semibold"
-                    >Techport13</span
-                  ><br />2021 - Present
+                  <span class="font-semibold">Techport13</span><br />Summer 2021
+                  - Winter 2021
                 </p>
               </div>
               <div class="mt-2 text-sm text-gray-700">
-                <p>
-
-                </p>
+                <p></p>
               </div>
               <div class="mt-2 text-sm text-gray-700">
                 <p>
-                  <span class="font-semibold">Technologies Used: </span>ServiceNow,
-                  JavaScript
+                  <span class="font-semibold">Technologies Used: </span
+                  >JavaScript, ServiceNow
+                </p>
+                <p>
+                  Served as an Associate Consultant, delivering Agile solutions
+                  to business needs for multiple Fortune 500 companies. Tasks
+                  required building APIs, designing and troubleshooting business
+                  workflows, and general scripting in (primarily) JavaScript.
                 </p>
               </div>
             </div>
@@ -67,7 +136,16 @@
           <div class="relative flex items-start space-x-3">
             <div class="relative">
               <img
-                class="w-10 rounded-full flex items-center justify-center ring-4 shadow-lg ring-personal-white"
+                class="
+                  w-10
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                  ring-4
+                  shadow-lg
+                  ring-personal-white
+                "
                 src="../../assets/images/uga_shield.png"
                 alt=""
               />
@@ -93,13 +171,15 @@
                   (Sapelo2), allowing me to combine my Neuroscience background
                   with Computer Science to create practical tools used by
                   researchers around the world.
-                  <br>
-                  These projects included a new
-                  Java-based variant Poplar BLAST search tool served with
-                  Tomcat7 on the lab's in-house server, and a refactoring of one of the lab's primary tools
-                  from Perl to Python with an HTML/JavaScript frontend, designed
-                  with TailwindCSS. I was also responsible for maintaining the server, including standard updates, installation of
-                  new packages, and webserver management.  Upon graduation, I recruited, interviewed, and trained my replacement.
+                  <br />
+                  These projects included a new Java-based variant Poplar BLAST
+                  search tool served with Tomcat7 on the lab's in-house server,
+                  and a refactoring of one of the lab's primary tools from Perl
+                  to Python with an HTML/JavaScript frontend, designed with
+                  TailwindCSS. I was also responsible for maintaining the
+                  server, including standard updates, installation of new
+                  packages, and webserver management. Upon graduation, I
+                  recruited, interviewed, and trained my replacement.
                 </p>
               </div>
               <div class="mt-2 text-sm text-gray-700">
@@ -121,8 +201,7 @@ export default {};
 </script>
 
 <style scoped>
-  #techport13 {
-    filter: invert(100%);
-  }
-
+#techport13 {
+  filter: invert(100%);
+}
 </style>
